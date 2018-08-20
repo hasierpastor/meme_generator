@@ -1,0 +1,60 @@
+form {
+  margin-top: 25px;
+}
+
+button {
+  margin-right: 90px;
+}
+
+.image-figure {
+  display: inline-block;
+  position: relative;
+  padding: 0px;
+  margin: 25px;
+}
+.image-figure img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  width: 350px;
+  height: 350px;
+}
+
+.meme-footer {
+  display: block;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  left: 50px;
+  bottom: 0;
+  padding: 1em;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.meme-header {
+  display: block;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  left: 50px;
+  top: 0;
+  padding: 1em;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.delete-button {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+}
+
+.image-figure:hover img {
+  opacity: 0.5;
+}
+.image-figure:hover button {
+  display: block;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container-fluid">
+      <h1 class="text-center">Welcome to the meme generator</h1>
+      <h5 class="text-center">Fill out the form and let the memes appear before your eyes</h5>
+    </div>
+    <form id="queryForm">
+        <div class="row form-group justify-content-around">
+          <label for="name" class="col-2 col-form-label">Meme URL</label>
+          <input type="text" class="col-7 form-control" id="url" placeholder="Please enter the URL fo your meme">
+        </div>
+        <div class="row form-group justify-content-around">
+          <label for="name" class="col-2 col-form-label">Text Top</label>
+          <input type="text" class="col-7 form-control" id="top-text" placeholder="Please enter the text you want to place at the top fo your meme">
+        </div>
+        <div class="row form-group justify-content-around">
+          <label for="name" class="col-2 col-form-label">Text Bottom</label>
+          <input type="text" class="col-7 form-control" id="bottom-text" placeholder="Please enter the text you want to place at the bottom of your image">
+        </div>
+        <div class="row justify-content-end">
+        <button type="button" id="queryBtn" class="btn-outline-dark">Add meme</button>
+        </div>
+    </form>
+    </div>
+    <div class="container-fluid" id="meme-container">
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
