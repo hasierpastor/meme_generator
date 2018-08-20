@@ -19,8 +19,9 @@ window.onload = function() {
     imageFooter.innerText = document.getElementById('bottom-text').value;
 
     var deleteButton = document.createElement('BUTTON');
-    deleteButton.innerText = 'Delete';
+    deleteButton.innerText = 'X';
     deleteButton.type = 'Delete';
+    deleteButton.setAttribute('class', 'btn btn-circle btn-sm btn-danger');
 
     imageFigure.classList.add('image-figure');
     imageHeader.classList.add('meme-header');
