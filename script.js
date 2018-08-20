@@ -2,10 +2,11 @@ window.onload = function() {
   var memeForm = document.getElementById('queryForm');
   var memeContainer = document.getElementById('meme-container');
   var memeButton = document.getElementById('queryBtn');
-  var deleteButton = document.getElementsByClassName('delete-button');
 
   memeButton.addEventListener('click', function(event) {
     var imageFigure = document.createElement('FIGURE');
+
+    event.preventDefault();
 
     var newMeme = document.createElement('img');
     newMeme.src = document.getElementById('url').value;
